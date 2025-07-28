@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin - Projetos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="section">
+    <h2>Área do Administrador</h2>
+
+    <form id="form-projeto" style="margin-top: 20px;">
+      <input type="text" placeholder="Título do projeto" id="titulo" required />
+      <input type="text" placeholder="Descrição" id="descricao" required />
+      <input type="url" placeholder="Link do projeto" id="link" required />
+      <button class="btn" type="submit">Publicar Projeto</button>
+    </form>
+
+    <h3 style="margin-top: 40px;">Projetos Publicados:</h3>
+    <div class="projetos-grid" id="lista-projetos"></div>
+  </section>
+
+  <script src="admin.js"></script>
+</body>
+</html>
